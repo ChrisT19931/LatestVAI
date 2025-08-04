@@ -64,7 +64,7 @@ export default function TermsOfServicePage() {
             </p>
             <div id="refund-policy" className="bg-red-50 border border-red-300 rounded-lg p-4 mb-4">
               <h3 className="text-xl font-bold text-black mb-2">Refund Policy</h3>
-              <p className="text-red-600 font-semibold mb-2">⚠️ NO REFUNDS POLICY</p>
+              <p className="text-blue-600 font-medium mb-2">Important: All Sales Are Final</p>
               <p className="text-gray-800">
                 <strong className="text-black">ALL SALES ARE FINAL.</strong> Due to the digital nature of our products, ebooks, and coaching services, we do not offer refunds under any circumstances once a product has been purchased and delivered. This includes but is not limited to:
               </p>

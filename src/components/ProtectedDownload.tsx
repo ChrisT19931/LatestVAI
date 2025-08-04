@@ -79,7 +79,7 @@ export default function ProtectedDownload({
           className="w-full mt-4 bg-slate-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-slate-800 transition-colors"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          Purchase Now to Unlock
+          Purchase to Access
         </button>
       </div>
     )
@@ -111,7 +111,7 @@ export default function ProtectedDownload({
           disabled={isDownloading}
           className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isDownloading ? 'Downloading...' : 'Download Now'}
+          {isDownloading ? 'Downloading...' : 'Download'}
         </button>
       </div>
       <div className="mt-4 text-sm text-slate-500">

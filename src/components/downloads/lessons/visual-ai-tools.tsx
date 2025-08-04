@@ -43,7 +43,7 @@ export default function VisualAITools() {
       {/* Case Study */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-white mb-2">📊 Case Study</h2>
-        <p className="text-gray-200">Graphic designer Emma increased her client capacity by 300% using AI visual tools for rapid prototyping. She now completes logo concepts in minutes instead of hours, allowing her to serve more clients while maintaining premium pricing for her creative direction and refinement skills.</p>
+        <p className="text-gray-200">Graphic designer Emma increased her client capacity by 300% using AI visual tools for rapid prototyping. She now completes logo concepts in minutes instead of hours, allowing her to serve more clients while maintaining competitive pricing for her creative direction and refinement skills.</p>
       </div>
 
       {/* Navigation */}

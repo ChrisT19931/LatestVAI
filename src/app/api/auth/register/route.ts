@@ -95,7 +95,7 @@ async function sendWelcomeEmail(email: string, name: string) {
         <ul>
           <li>Access cutting-edge AI tools and guides</li>
           <li>Download premium digital products</li>
-          <li>Get exclusive AI prompts and strategies</li>
+          <li>Get helpful AI prompts and strategies</li>
           <li>Transform your business with AI</li>
         </ul>
         
@@ -123,7 +123,7 @@ async function sendWelcomeEmail(email: string, name: string) {
     With your new account, you can:
     - Access cutting-edge AI tools and guides
     - Download premium digital products
-    - Get exclusive AI prompts and strategies
+    - Get helpful AI prompts and strategies
     - Transform your business with AI
     
     Visit ${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3003'} to browse our products.

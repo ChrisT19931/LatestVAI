@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
               <li>Process and fulfill your product orders</li>
               <li>Provide customer support and coaching services</li>
               <li>Send transactional emails (order confirmations, download links)</li>
-              <li>Send email communications about product updates and exclusive offers</li>
+              <li>Send email communications about product updates and additional resources</li>
               <li>Deliver coaching calls and educational content</li>
               <li>Improve our products and methodologies</li>
               <li>Analyze usage patterns to enhance our services</li>
@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
             <div className="bg-blue-50 border border-blue-300 rounded-lg p-4 mb-4">
               <p className="text-blue-600 font-semibold mb-2">📧 Email Subscription</p>
               <p className="text-gray-800">
-                By creating an account or making a purchase, you automatically subscribe to our email system. We use your email to send product updates, tutorials, exclusive offers, and educational content. You can unsubscribe at any time using the link in our emails.
+                By creating an account or making a purchase, you automatically subscribe to our email system. We use your email to send product updates, tutorials, additional resources, and educational content. You can unsubscribe at any time using the link in our emails.
               </p>
             </div>
 

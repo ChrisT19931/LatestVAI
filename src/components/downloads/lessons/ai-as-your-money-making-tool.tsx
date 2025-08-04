@@ -27,7 +27,7 @@ export default function AIAsYourMoneyMakingTool() {
           <li><strong>Product Creation:</strong> AI-generated courses, templates, and digital products</li>
           <li><strong>Efficiency Gains:</strong> 70% reduction in manual tasks = more time for high-value activities</li>
           <li><strong>24/7 Operations:</strong> AI tools work continuously, scaling your output without scaling your hours</li>
-          <li><strong>Market Positioning:</strong> Become the "AI expert" in your niche for premium pricing</li>
+          <li><strong>Market Positioning:</strong> Become the "AI expert" in your niche for value-based pricing</li>
         </ul>
       </div>
 

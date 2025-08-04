@@ -96,11 +96,11 @@ export default function FAQPage() {
       ]
     },
     {
-      title: 'Special Offers',
+      title: 'Product Options',
       faqs: [
         {
-          question: 'Do you have any current promotions?',
-          answer: 'Yes! We currently have our AI Prompts Arsenal 2025 on sale for just A$10. These 30x prompts to feed into ChatGPT to provide you with step by step plan for every aspect + more to start, operate and scale an online business (from setting up to ecomm ideas/requirements marketing / etc).'
+          question: 'What is included in your AI Prompts Arsenal?',
+answer: 'Our AI Prompts Arsenal 2025 is available for A$10. It includes 30 prompts designed for ChatGPT that provide step-by-step guidance for various aspects of online business development, from initial setup to e-commerce requirements and marketing strategies.'
         },
         {
           question: 'What does the AI Business Strategy Session include?',
@@ -184,12 +184,12 @@ export default function FAQPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Special Offers</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Product Options</h3>
             <p className="text-gray-600 mb-4">
-              Check out our current promotions and limited-time deals on our high-quality digital products.
+              Explore our range of digital products designed to help you achieve your goals.
             </p>
             <Link href="/products" className="text-primary-600 hover:text-primary-500 font-medium">
-              View Current Deals
+              View Products
             </Link>
           </div>
 

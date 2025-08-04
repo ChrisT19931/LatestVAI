@@ -95,7 +95,7 @@ export default function UpsellModal({
               <p className="text-gray-300 text-sm line-clamp-2 mb-2">{upsellProduct.description}</p>
               <div className="flex items-center justify-between">
                 <span className="text-xl font-bold text-blue-400">{formatPrice(upsellProduct.price)}</span>
-                <span className="text-sm text-green-400 font-medium">Special Offer</span>
+                <span className="text-sm text-blue-400 font-medium">Additional Option</span>
               </div>
             </div>
           </div>

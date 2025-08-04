@@ -10,7 +10,7 @@ export default function TheAIRevolutionIn2025() {
       {/* Tip */}
       <div className="bg-blue-900/30 border border-blue-500/30 rounded-lg p-4 mb-6">
         <h3 className="text-lg font-semibold text-blue-300 mb-2">💡 Pro Tip</h3>
-        <p className="text-blue-100">Start learning AI tools now - the early adopters are capturing 80% of the market opportunities. Don't wait for the "perfect" moment.</p>
+        <p className="text-blue-100">Learning AI tools provides valuable skills - early adopters often gain experience advantages in emerging technologies.</p>
       </div>
 
       {/* Brief */}
@@ -26,7 +26,7 @@ export default function TheAIRevolutionIn2025() {
           <li><strong>Market Timing:</strong> AI market reaching $1.8 trillion - position yourself in high-growth sectors</li>
           <li><strong>Income Acceleration:</strong> AI-skilled professionals seeing 40-60% income increases within 12 months</li>
           <li><strong>Job Creation:</strong> 12 million new AI-related jobs globally - be ready to capture them</li>
-          <li><strong>Competitive Advantage:</strong> Early AI adopters dominating their industries - don't get left behind</li>
+          <li><strong>Competitive Advantage:</strong> Early AI adopters gaining momentum in their industries - join the innovation wave</li>
           <li><strong>Skill Stacking:</strong> Combine your existing expertise with AI tools for exponential value creation</li>
         </ul>
       </div>

@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import CinematicHero from '../components/3d/CinematicHero'
+import TypewriterEffect from '@/components/TypewriterEffect'
 
 export default function Home() {
   return (
@@ -32,9 +33,6 @@ export default function Home() {
             
             {/* Pricing Section Header */}
             <div className="text-center mb-16">
-              <span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-900/50 to-pink-900/50 rounded-full text-xs font-semibold text-purple-300 mb-4 border border-purple-500/30 shadow-lg shadow-purple-500/10">
-                🔥 LIMITED TIME: 70% OFF LAUNCH PRICING
-              </span>
               <h3 className="text-4xl md:text-5xl font-black text-white mb-6 drop-shadow-2xl">
                 Choose Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Success Path</span>
               </h3>
@@ -163,23 +161,32 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <h3 className="text-3xl font-black mb-3 text-white drop-shadow-lg">
-                  AI Prompts Arsenal 2025
+                  <TypewriterEffect text="30x AI Prompts" className="text-3xl font-black text-white drop-shadow-lg" speed={80} />
                 </h3>
                 <p className="text-gray-200 mb-6 leading-relaxed text-base font-medium">
-                  <span className="text-red-400 font-bold">⚠️</span> Missing out on learning AI business strategies before it's too late - while competitors gain unfair advantages.
+                  <TypewriterEffect 
+                    text="Full project structure split into 30x prompts, feed into ChatGPT. Save the project, adjust prompts best suited for your goals & get to work. This is the most cost effective option because it requires the most work from you to put everything together." 
+                    className="text-gray-200 leading-relaxed text-base font-medium" 
+                    speed={30} 
+                    startDelay={1000}
+                  />
                 </p>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.1s'}}>
                     <div className="w-3 h-3 bg-emerald-400 rounded-full shadow-lg group-hover:shadow-emerald-400/50 group-hover:animate-pulse group-hover:scale-110 transition-all duration-300"></div>
-                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300"><span className="text-emerald-400 font-bold">💡 Get This:</span> 30x proven AI prompts for instant business planning</span>
+                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300">30x proven AI prompts for instant business planning.</span>
                   </div>
                   <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.2s'}}>
                     <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse shadow-lg group-hover:shadow-emerald-400/50 group-hover:scale-110 transition-all duration-300"></div>
-                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300"><span className="text-yellow-400 font-bold">💰 Why Us?:</span> Start learning now for only A$10 vs A$3000+ business consultants</span>
+                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300">Prompts structured for start-finish online business build</span>
                   </div>
                   <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.3s'}}>
                     <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse shadow-lg group-hover:shadow-emerald-400/50 group-hover:scale-110 transition-all duration-300"></div>
-                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300">Complete ecommerce, marketing & scaling strategies included</span>
+                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300">Complete ecommerce, marketing & scaling strategies included.</span>
+                  </div>
+                  <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.4s'}}>
+                    <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse shadow-lg group-hover:shadow-emerald-400/50 group-hover:scale-110 transition-all duration-300"></div>
+                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300">No experience required, follow the steps, ask your project questions, this structure will set the foundation.</span>
                   </div>
                 </div>
                 <div className="text-center mb-6">
@@ -187,7 +194,7 @@ export default function Home() {
                   <div className="text-sm text-gray-300 font-medium">One-time payment</div>
                 </div>
                 <Link href="/products/2" className="w-full block text-center py-4 rounded-xl font-bold transition-all duration-500 hover:scale-110 shadow-lg bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white border border-emerald-500/30 hover:shadow-emerald-500/40 hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden group/btn">
-                  <span className="relative z-10 group-hover/btn:animate-pulse">🚀 Start Learning Now</span>
+                  <span className="relative z-10">Start Learning</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-500 opacity-0 group-hover/btn:opacity-20 transition-opacity duration-300"></div>
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                 </Link>
@@ -226,10 +233,15 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <h3 className="text-3xl font-black mb-3 text-white drop-shadow-lg">
-                  AI Tools Mastery Guide 2025
+                  <TypewriterEffect text="AI Tools Mastery Guide 2025" className="text-3xl font-black text-white drop-shadow-lg" speed={80} />
                 </h3>
                 <p className="text-gray-200 mb-6 leading-relaxed text-base font-medium">
-                  <span className="text-red-400 font-bold">⚠️</span> Staying behind while others master AI tools to build profitable businesses - missing the AI revolution window.
+                  <TypewriterEffect 
+                    text="Master AI tools to build profitable businesses and join the growing community of successful AI entrepreneurs." 
+                    className="text-gray-200 leading-relaxed text-base font-medium" 
+                    speed={30} 
+                    startDelay={1000}
+                  />
                 </p>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.1s'}}>
@@ -254,31 +266,31 @@ export default function Home() {
                     <span className="text-5xl font-black text-white drop-shadow-lg">A$25</span>
                     <span className="text-2xl text-gray-400 line-through font-bold">A$50</span>
                   </div>
-                  <div className="text-sm text-green-300 font-bold animate-pulse bg-green-500/20 px-3 py-1 rounded-full" style={{animationDuration: '2s'}}>50% OFF Launch Price</div>
+                  <div className="text-sm text-blue-300 font-medium bg-blue-500/20 px-3 py-1 rounded-full">Starter Package</div>
                 </div>
                 <Link href="/products/1" className="w-full block text-center py-4 rounded-xl font-bold transition-all duration-500 hover:scale-110 shadow-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white border border-blue-500/30 hover:shadow-blue-500/40 hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden group/btn">
-                  <span className="relative z-10 group-hover/btn:animate-pulse">🚀 Master AI Tools Now</span>
+                  <span className="relative z-10">🚀 Master AI Tools</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover/btn:opacity-20 transition-opacity duration-300"></div>
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                 </Link>
               </div>
             </div>
             
-            {/* PRO Plan - Premium AI Business Strategy Session */}
+            {/* Business Strategy Session */}
             <div className="relative group bg-gradient-to-br from-purple-900/95 to-indigo-900/95 rounded-3xl shadow-2xl border border-purple-400/40 backdrop-blur-sm overflow-hidden transform transition-all duration-700 hover:shadow-purple-400/40 hover:shadow-2xl hover:-translate-y-4 hover:scale-105 shimmer-effect">
-              {/* Premium floating particles */}
+              {/* Floating particles */}
               <div className="absolute top-4 right-4 w-10 h-10 bg-gradient-to-r from-purple-400/40 to-pink-400/40 rounded-full blur-sm animate-pulse" style={{animationDelay: '0.5s'}}></div>
               <div className="absolute bottom-8 left-8 w-8 h-8 bg-gradient-to-r from-indigo-400/30 to-purple-400/30 rounded-full blur-sm animate-pulse" style={{animationDelay: '1.5s'}}></div>
               <div className="absolute top-1/3 left-1/5 w-6 h-6 bg-gradient-to-r from-pink-400/25 to-purple-400/25 rounded-full blur-sm animate-pulse" style={{animationDelay: '3s'}}></div>
               <div className="absolute top-2/3 right-1/4 w-5 h-5 bg-gradient-to-r from-purple-300/20 to-indigo-300/20 rounded-full blur-sm animate-pulse" style={{animationDelay: '4.5s'}}></div>
               
-              {/* Premium animated border glow */}
+              {/* Animated border glow */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-400/30 via-pink-400/20 to-indigo-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               
-              {/* Premium badge */}
+              {/* Featured badge */}
               <div className="absolute top-4 left-4 z-20">
                 <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs font-black px-3 py-1 rounded-full shadow-lg animate-pulse group-hover:animate-bounce transition-all duration-300 group-hover:scale-110" style={{animationDuration: '2s'}}>
-                  ⭐ PREMIUM
+                  ⭐ FEATURED
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-orange-400 rounded-full opacity-0 group-hover:opacity-50 animate-ping"></div>
                 </div>
               </div>
@@ -305,10 +317,15 @@ export default function Home() {
               
               <div className="p-8">
                 <h3 className="text-3xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-pink-200 drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
-                  AI Business Strategy Session 2025
+                  <TypewriterEffect text="AI Business Strategy Session 2025" className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-pink-200 drop-shadow-lg" speed={80} />
                 </h3>
                 <p className="text-gray-100 mb-8 leading-relaxed text-base font-medium group-hover:text-white transition-colors duration-500">
-                  <span className="text-red-400 font-bold">⚠️</span> Struggling alone without expert guidance - wasting months trying to figure out profitable AI business strategies.
+                  <TypewriterEffect 
+                    text="Expert guidance can save you months of trial and error when developing profitable AI business strategies." 
+                    className="text-gray-100 leading-relaxed text-base font-medium" 
+                    speed={30} 
+                    startDelay={1000}
+                  />
                 </p>
                 
                 <div className="space-y-5 mb-8">
@@ -327,19 +344,19 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-4 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.4s'}}>
                     <div className="w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full shadow-lg group-hover:shadow-yellow-400/50 group-hover:animate-pulse group-hover:scale-110 transition-all duration-300"></div>
-                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300">83% OFF - A$3,000 value for only A$500</span>
+                    <span className="text-sm text-gray-100 font-medium group-hover:text-white transition-colors duration-300">Business service - A$500 investment</span>
                   </div>
                 </div>
                 
                 <div className="text-center mb-8 group-hover:scale-105 transition-transform duration-500">
-                  <div className="text-lg text-gray-400 line-through mb-1">Was A$3,000</div>
-                  <div className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 drop-shadow-2xl mb-2 animate-pulse">A$500</div>
-                  <div className="text-sm text-gray-300 font-medium">💎 Premium Investment - Limited Time</div>
-                  <div className="text-sm text-green-400 font-bold animate-pulse">🔥 83% OFF - Limited Time Offer!</div>
+                  <div className="text-lg text-gray-400 mb-1">Business Service</div>
+                  <div className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 drop-shadow-2xl mb-2">A$500</div>
+                  <div className="text-sm text-gray-300 font-medium">💎 Business Investment</div>
+                  <div className="text-sm text-blue-400 font-medium">Value-Focused Pricing</div>
                 </div>
                 
                 <Link href="/products/3" className="w-full block text-center py-5 rounded-2xl font-black text-lg transition-all duration-500 transform hover:scale-110 hover:-translate-y-1 shadow-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 hover:from-purple-500 hover:via-pink-500 hover:to-indigo-500 text-white border-2 border-purple-400/50 hover:border-purple-300/70 hover:shadow-purple-400/30 relative overflow-hidden group/btn">
-                  <span className="relative z-10 group-hover/btn:animate-pulse">🚀 Book Expert Session Now</span>
+                  <span className="relative z-10">🚀 Book Expert Session</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover/btn:opacity-20 transition-opacity duration-300"></div>
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                 </Link>
@@ -363,135 +380,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Elite Benefits Section */}
-      <section className="py-24 bg-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-purple-900/10"></div>
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
-        <div className="container mx-auto px-6 max-w-7xl relative z-10">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black text-white mb-6 glow-text">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Ventaro</span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Experience the pinnacle of digital with our high-quality AI-powered tools and strategies.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Row 1 */}
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-blue-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Instant Digital Delivery</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Get immediate access to your purchased products with our seamless, lightning-fast delivery system.
-              </p>
-            </div>
-            
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-green-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-green-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-green-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Professional-Grade Content</h3>
-              <p className="text-gray-300 leading-relaxed">
-                All our products feature high-quality, professional content created with the latest AI technologies.
-              </p>
-            </div>
-            
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-purple-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-purple-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Lifetime Access</h3>
-              <p className="text-gray-300 leading-relaxed">
-                No subscriptions, no recurring fees. Pay once and own your digital products forever with unlimited access.
-              </p>
-            </div>
 
-            {/* Row 2 */}
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-orange-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">AI Arbitrage Peak Window</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Right now, AI gives unfair advantages in lead gen, content, marketing, and automation. By 2026, everyone will be using the same tools and margins shrink.
-              </p>
-            </div>
-
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-cyan-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-cyan-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Early Adopter Distribution Advantage</h3>
-              <p className="text-gray-300 leading-relaxed">
-                The businesses capturing audiences + data now will dominate later. Starting later means you're buying attention instead of owning it.
-              </p>
-            </div>
-
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-emerald-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-emerald-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Lower Costs Now</h3>
-              <p className="text-gray-300 leading-relaxed">
-                As demand for AI tools grows, pricing for APIs, ad platforms, and AI infrastructure will rise. Getting in now means cheaper growth.
-              </p>
-            </div>
-
-            {/* Row 3 */}
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-rose-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-rose-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-rose-500 to-pink-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-rose-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Beat Content Saturation</h3>
-              <p className="text-gray-300 leading-relaxed">
-                AI-generated content is flooding the web. By 2026, standing out will be 10x harder than it is now. This is the last easy window.
-              </p>
-            </div>
-
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-indigo-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-indigo-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-indigo-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Brand Over Tech Advantage</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Right now, results still impress. By 2026, everyone will have similar AI tools and only brands with early traction will matter.
-              </p>
-            </div>
-
-            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-amber-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-amber-500/30">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-amber-500/30">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Novelty Window Closing</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Audiences are still wowed by AI-powered sites. In a few years, it'll be the norm. The novelty window is closing fast.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Elite Custom Website Creation */}
       <section id="elite-custom-website-creation" className="py-24 bg-black relative overflow-hidden">
@@ -505,7 +394,7 @@ export default function Home() {
           {/* Elite Header Section */}
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-900/50 to-blue-900/50 rounded-full text-xs font-semibold text-purple-300 mb-4 border border-purple-500/30 shadow-lg shadow-purple-500/10">
-              FLAGSHIP PREMIUM SERVICE
+              COMPREHENSIVE SERVICE PACKAGE
             </span>
             <h2 className="text-5xl md:text-6xl font-black text-white mb-6 glow-text">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Elite Custom Website Creation</span>
@@ -820,6 +709,136 @@ export default function Home() {
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-emerald-500/20 rounded-full animate-bounce" style={{animationDelay: '0s', animationDuration: '2s'}}></div>
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-500/20 rounded-full animate-bounce" style={{animationDelay: '1s', animationDuration: '3s'}}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Elite Benefits Section */}
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-purple-900/10"></div>
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="container mx-auto px-6 max-w-7xl relative z-10">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-black text-white mb-6 glow-text">
+              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Ventaro</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Experience the pinnacle of digital with our high-quality AI-powered tools and strategies.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Row 1 */}
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-blue-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Instant Digital Delivery</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Get immediate access to your purchased products with our seamless, lightning-fast delivery system.
+              </p>
+            </div>
+            
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-green-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-green-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-green-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Professional-Grade Content</h3>
+              <p className="text-gray-300 leading-relaxed">
+                All our products feature high-quality, professional content created with the latest AI technologies.
+              </p>
+            </div>
+            
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-purple-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-purple-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Lifetime Access</h3>
+              <p className="text-gray-300 leading-relaxed">
+                No subscriptions, no recurring fees. Pay once and own your digital products forever with unlimited access.
+              </p>
+            </div>
+
+            {/* Row 2 */}
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-orange-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">AI Arbitrage Peak Window</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Right now, AI offers significant opportunities in lead generation, content creation, marketing, and automation. As adoption increases, developing unique implementation strategies will become increasingly valuable.
+              </p>
+            </div>
+
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-cyan-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-cyan-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Early Adopter Distribution Advantage</h3>
+              <p className="text-gray-300 leading-relaxed">
+                The businesses capturing audiences + data now will dominate later. Starting later means you're buying attention instead of owning it.
+              </p>
+            </div>
+
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-emerald-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-emerald-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Lower Costs Now</h3>
+              <p className="text-gray-300 leading-relaxed">
+                As demand for AI tools grows, pricing for APIs, ad platforms, and AI infrastructure will rise. Getting in now means cheaper growth.
+              </p>
+            </div>
+
+            {/* Row 3 */}
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-rose-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-rose-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-rose-500 to-pink-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-rose-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Beat Content Saturation</h3>
+              <p className="text-gray-300 leading-relaxed">
+                AI-generated content is flooding the web. By 2026, standing out will be 10x harder than it is now. This is the last easy window.
+              </p>
+            </div>
+
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-indigo-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-indigo-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-indigo-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">Brand Over Tech Advantage</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Right now, results still impress. By 2026, everyone will have similar AI tools and only brands with early traction will matter.
+              </p>
+            </div>
+
+            <div className="group text-center p-8 glass-panel rounded-3xl shadow-2xl hover:shadow-amber-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 border border-amber-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-amber-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white glow-text">AI Adoption Trends</h3>
+              <p className="text-gray-300 leading-relaxed">
+                AI-powered websites are becoming increasingly common. Early adopters can still stand out with innovative implementations before they become standard practice.
+              </p>
             </div>
           </div>
         </div>

@@ -443,9 +443,9 @@ export const advancedTemplates: AdvancedTemplate[] = [
         type: 'PromoBanner',
         name: 'Promotional Banner',
         props: {
-          title: 'Summer Sale - Up to 50% Off',
-          subtitle: 'Limited time offer on selected items',
-          ctaButton: { label: 'Shop Now', href: '/shop' },
+          title: 'Seasonal Collection',
+          subtitle: 'Special selection of quality items',
+          ctaButton: { label: 'Shop', href: '/shop' },
           backgroundImage: '/images/sale-banner.jpg'
         }
       },
@@ -502,9 +502,9 @@ export const advancedTemplates: AdvancedTemplate[] = [
             type: 'PromoBanner',
             name: 'Promotional Banner',
             props: {
-              title: 'Summer Sale - Up to 50% Off',
-              subtitle: 'Limited time offer on selected items',
-              ctaButton: { label: 'Shop Now', href: '/shop' },
+              title: 'Seasonal Collection',
+              subtitle: 'Special selection of quality items',
+              ctaButton: { label: 'Shop', href: '/shop' },
               backgroundImage: '/images/sale-banner.jpg'
             }
           },

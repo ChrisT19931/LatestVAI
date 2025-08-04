@@ -55,8 +55,8 @@ export default function CountdownTimer({ variant = 'hero', className = '' }: Cou
   if (isExpired) {
     return (
       <div className={`text-center ${className}`}>
-        <div className="text-red-500 font-bold text-lg">
-          🔥 Coaching Discount Has Ended
+        <div className="text-blue-500 font-bold text-lg">
+          Coaching Session Information Updated
         </div>
       </div>
     );
@@ -67,8 +67,8 @@ export default function CountdownTimer({ variant = 'hero', className = '' }: Cou
     return (
       <div className={`text-center ${className}`}>
         <div className="backdrop-blur-xl bg-gradient-to-r from-red-600/20 to-orange-600/20 border border-red-500/30 rounded-2xl p-6 mb-6 shadow-2xl">
-          <div className="text-red-400 font-bold text-sm mb-2 uppercase tracking-wider">
-            🔥 Limited Time: Coaching Discount Ends In
+          <div className="text-blue-400 font-medium text-sm mb-2 uppercase tracking-wider">
+            Coaching Session Information
           </div>
           <div className="flex justify-center items-center space-x-4 text-white">
             <div className="text-center">
@@ -99,8 +99,8 @@ export default function CountdownTimer({ variant = 'hero', className = '' }: Cou
               <div className="text-xs text-red-300 font-semibold uppercase tracking-wide">Secs</div>
             </div>
           </div>
-          <div className="text-orange-300 text-sm mt-3 font-medium">
-            Save $2,500 on Complete Business Deployment Coaching
+          <div className="text-blue-300 text-sm mt-3 font-medium">
+            Business Deployment Coaching Details
           </div>
         </div>
       </div>
@@ -112,8 +112,8 @@ export default function CountdownTimer({ variant = 'hero', className = '' }: Cou
     return (
       <div className={`text-center ${className}`}>
         <div className="bg-gradient-to-r from-red-600/10 to-orange-600/10 border border-red-500/20 rounded-xl p-4 mb-4">
-          <div className="text-red-400 font-bold text-xs mb-2 uppercase tracking-wider">
-            🔥 Coaching Discount Ends In
+          <div className="text-blue-400 font-bold text-xs mb-2 uppercase tracking-wider">
+            Coaching Session Information
           </div>
           <div className="flex justify-center items-center space-x-3 text-white">
             <div className="text-center">
@@ -136,8 +136,8 @@ export default function CountdownTimer({ variant = 'hero', className = '' }: Cou
               <div className="text-xs text-red-400 font-medium">Sec</div>
             </div>
           </div>
-          <div className="text-orange-300 text-xs mt-2">
-            Save $2,500 on Coaching
+          <div className="text-blue-300 text-xs mt-2">
+            Coaching Session Details
           </div>
         </div>
       </div>
@@ -150,11 +150,11 @@ export default function CountdownTimer({ variant = 'hero', className = '' }: Cou
       <div className={`inline-flex items-center ${className}`}>
         <div className="bg-red-600/20 border border-red-500/30 rounded-lg px-3 py-2">
           <div className="flex items-center space-x-2 text-white text-sm">
-            <span className="text-red-400 font-bold">🔥</span>
-            <span className="font-bold text-red-300">
+            <span className="text-blue-400 font-bold">ℹ️</span>
+            <span className="font-bold text-blue-300">
               {timeLeft.days}d {timeLeft.hours.toString().padStart(2, '0')}h {timeLeft.minutes.toString().padStart(2, '0')}m
             </span>
-            <span className="text-red-400 text-xs">left</span>
+            <span className="text-blue-400 text-xs">remaining</span>
           </div>
         </div>
       </div>

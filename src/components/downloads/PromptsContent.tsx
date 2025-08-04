@@ -386,7 +386,7 @@ export default function PromptsContent({ hasAccess = false, isAdmin = false }: P
                 <h3 className="text-lg font-semibold text-orange-400 mb-3">Customer Retention Program</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Develop a customer retention program for [E-COMMERCE BUSINESS]. Include: loyalty point system, VIP customer tiers, exclusive offers, birthday/anniversary campaigns, win-back sequences for inactive customers, and referral incentives. Focus on increasing lifetime value and repeat purchases."
+                    "Develop a customer retention program for [E-COMMERCE BUSINESS]. Include: loyalty point system, customer appreciation tiers, special benefits, birthday/anniversary campaigns, re-engagement sequences for inactive customers, and referral incentives. Focus on increasing lifetime value and repeat purchases."
                   </p>
                 </div>
                 <p className="text-gray-400 text-sm">Keep customers coming back for more.</p>

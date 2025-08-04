@@ -252,7 +252,7 @@ export class AIService {
             <div class="container">
                 <h2>Contact Us</h2>
                 <p>Get in touch with our team</p>
-                <button class="contact-button">Contact Now</button>
+                <button class="contact-button">Contact Us</button>
             </div>
         </section>
     </main>

@@ -171,7 +171,7 @@ export default function Footer() {
                 Subscribe to Our Newsletter
               </h3>
               <p className="text-gray-400 mb-6 text-center text-sm">
-                Stay updated with our latest AI tools, tutorials, and exclusive offers.
+                Stay updated with our latest AI tools, tutorials, and additional resources.
               </p>
               
               {subscribed ? (

@@ -71,7 +71,7 @@ export default function BuyNowButton({ product, className = '' }: BuyNowButtonPr
         throw new Error('No checkout URL received');
       }
     } catch (error: any) {
-      console.error('Buy now error:', error);
+      console.error('Purchase error:', error);
       toast.error(error.message || 'Failed to start checkout. Please try again.');
     } finally {
       setIsLoading(false);
@@ -97,7 +97,7 @@ export default function BuyNowButton({ product, className = '' }: BuyNowButtonPr
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
           </svg>
-          Buy Now - A${product.price.toFixed(2)} AUD
+          Purchase - A${product.price.toFixed(2)} AUD
         </>
       )}
     </button>

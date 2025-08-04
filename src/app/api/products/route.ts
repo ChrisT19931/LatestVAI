@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase';
 const mockProducts = [
   {
     id: '2',
-    name: 'AI Prompts Starter Pack',
+    name: '30x AI Prompts',
     description: 'Your entry point to AI-powered business success. 30 ready-to-use prompts that jumpstart your online business journey with minimal learning curve and immediate implementation.',
     price: 10.00,
     image_url: '/images/products/ai-prompts-arsenal.svg',

@@ -969,10 +969,10 @@ export default function ProductPage() {
                       Premium Investment Package
                     </h4>
                     <div className="text-center mb-6">
-                      <div className="text-lg text-gray-400 line-through mb-1">Was A$3,000</div>
+                      <div className="text-lg text-gray-400 mb-1">Business Service</div>
                       <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 drop-shadow-2xl mb-2">A$500</div>
-                      <div className="text-sm text-blue-300 font-medium">💎 Premium Investment - Limited Time</div>
-                      <div className="text-sm text-green-400 font-bold animate-pulse">🔥 83% OFF - Limited Time Offer!</div>
+                      <div className="text-sm text-blue-300 font-medium">💎 Business Investment</div>
+                      <div className="text-sm text-green-400 font-medium">Value-Focused Pricing</div>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">

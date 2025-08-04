@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { supabase } from '@/lib/supabase';
 import BuyNowButton from '@/components/BuyNowButton';
 import StarBackground from '@/components/3d/StarBackground';
+import TypewriterEffect from '@/components/TypewriterEffect';
 
 
 
@@ -83,8 +84,8 @@ export default async function ProductsPage() {
       <div className="relative z-10 container mx-auto px-6 max-w-7xl">
         {/* Enhanced Header Section */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-900/50 to-pink-900/50 rounded-full text-xs font-semibold text-purple-300 mb-4 border border-purple-500/30 shadow-lg shadow-purple-500/10 animate-pulse">
-            🔥 LIMITED TIME: 83% OFF LAUNCH PRICING
+          <span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-900/50 to-pink-900/50 rounded-full text-xs font-semibold text-purple-300 mb-4 border border-purple-500/30 shadow-lg shadow-purple-500/10">
+            AI-Powered Business Solutions
           </span>
           <h1 className="text-5xl md:text-6xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-400 to-purple-500 drop-shadow-2xl">
             AI Business Solutions
@@ -93,8 +94,8 @@ export default async function ProductsPage() {
             Choose your path to AI-powered business success
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full animate-pulse"></div>
-          <p className="text-red-400 font-bold mt-4 text-lg animate-pulse">
-            ⚠️ Cost of Inaction: Every day you wait, competitors gain unfair advantages with AI
+          <p className="text-blue-400 font-medium mt-4 text-lg">
+            Discover how AI tools can enhance your business efficiency and innovation
           </p>
         </div>
         
@@ -235,14 +236,52 @@ export default async function ProductsPage() {
                   {/* Content Section */}
                   <div className="p-8">
                     <h3 className="text-3xl font-black mb-3 text-white drop-shadow-lg">
-                      {product.name}
+                      <TypewriterEffect 
+                        text={product.name.includes('30x AI Prompts') ? '30x AI Prompts' : product.name} 
+                        className="text-3xl font-black text-white drop-shadow-lg" 
+                        speed={80} 
+                      />
                     </h3>
                     <p className="text-gray-200 mb-6 leading-relaxed text-base font-medium">
-                      <span className="text-red-400 font-bold">⚠️</span> Missing out on learning AI business strategies before it's too late - while competitors gain unfair advantages.
+                      <TypewriterEffect 
+                        text={product.name.includes('30x AI Prompts') 
+                          ? "Full project structure split into 30x prompts, feed into ChatGPT. Save the project, adjust prompts best suited for your goals & get to work. This is the most cost effective option because it requires the most work from you to put everything together." 
+                          : "AI business strategies can help level the playing field in today's competitive market."} 
+                        className="text-gray-200 leading-relaxed text-base font-medium" 
+                        speed={30} 
+                        startDelay={1000}
+                      />
                     </p>
-                    <p className="text-gray-300 mb-8 leading-relaxed text-sm">
-                      {product.description}
+                    <p className="text-gray-300 mb-6 leading-relaxed text-sm">
+                      <TypewriterEffect 
+                        text={product.description} 
+                        className="text-gray-300 leading-relaxed text-sm" 
+                        speed={25} 
+                        startDelay={2000}
+                      />
                     </p>
+                    
+                    {/* Product Benefits - Only for 30x AI Prompts */}
+                    {product.name.includes('30x AI Prompts') && (
+                      <div className="space-y-3 mb-8">
+                        <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.1s'}}>
+                          <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:animate-pulse group-hover:scale-110 transition-all duration-300`}></div>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">✨ Ready-to-use AI prompts for immediate business results</span>
+                        </div>
+                        <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.2s'}}>
+                          <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full animate-pulse shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:scale-110 transition-all duration-300`}></div>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">🎯 Step-by-step framework from idea to profitable business</span>
+                        </div>
+                        <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.3s'}}>
+                          <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full animate-pulse shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:scale-110 transition-all duration-300`}></div>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">💼 Full business blueprint: ecommerce, marketing & growth tactics</span>
+                        </div>
+                        <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.4s'}}>
+                          <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full animate-pulse shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:scale-110 transition-all duration-300`}></div>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">🚀 Beginner-friendly: just follow prompts, ask questions & build</span>
+                        </div>
+                      </div>
+                    )}
                     
                     {/* Enhanced Pricing Section */}
                     <div className="text-center mb-6">
@@ -257,7 +296,7 @@ export default async function ProductsPage() {
                     
                     {/* Enhanced Action Buttons */}
                     <Link href={`/products/${product.id}`} className={`w-full block text-center py-4 rounded-xl font-bold transition-all duration-500 hover:scale-110 shadow-lg bg-gradient-to-r ${config.tierColor} hover:${config.tierColor.replace('to-', 'hover:to-').replace('from-', 'hover:from-').replace('-500', '-400').replace('-600', '-500')} text-white border border-${config.accent}-500/30 hover:shadow-${config.accent}-500/40 hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden group/btn`}>
-                      <span className="relative z-10 group-hover/btn:animate-pulse">🚀 Start Learning Now</span>
+                      <span className="relative z-10">Start Learning</span>
                       <div className={`absolute inset-0 bg-gradient-to-r from-${config.accent}-400 to-${config.accent}-500 opacity-0 group-hover/btn:opacity-20 transition-opacity duration-300`}></div>
                       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                     </Link>

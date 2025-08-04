@@ -81,7 +81,7 @@ export default function CheckoutSuccessPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex items-center justify-center">
         <div className="text-center max-w-md mx-auto">
-          <div className="text-red-400 text-6xl mb-4">⚠️</div>
+          <div className="text-blue-400 text-6xl mb-4">ℹ️</div>
           <h1 className="text-3xl font-bold text-white mb-4">Payment Verification Failed</h1>
           <p className="text-gray-300 mb-8">{error}</p>
           <div className="space-y-4">

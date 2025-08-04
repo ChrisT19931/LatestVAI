@@ -211,7 +211,7 @@ export default function PurchaseForm() {
                        <span className="ml-2">Processing...</span>
                      </>
                    ) : (
-                     'Buy Now'
+                     'Complete Purchase'
                    )}
                  </button>
                </div>

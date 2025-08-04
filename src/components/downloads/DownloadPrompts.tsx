@@ -27,7 +27,7 @@ const DownloadPrompts: React.FC<DownloadPromptsProps> = ({ productInfo, handleDo
           onClick={handleDownload}
           className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
         >
-          Download Prompts Now
+          Download Prompts
         </button>
       </div>
       

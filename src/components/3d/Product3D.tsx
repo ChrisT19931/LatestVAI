@@ -570,12 +570,12 @@ export default function Product3D({ product, onAddToCart }: Product3DProps) {
           className="absolute top-6 left-6 right-6 backdrop-blur-sm bg-black/40 rounded-xl p-4 border border-white/10"
         >
           <h3 className="text-white font-bold text-lg mb-1">{product.name}</h3>
-          <p className="text-gray-300 text-sm opacity-90">Premium Digital Product</p>
+          <p className="text-gray-300 text-sm opacity-90">Digital Product</p>
           <div className="flex items-center justify-between mt-3">
             <span className="text-2xl font-black text-white">${product.price}</span>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-green-400 text-sm font-semibold">Available Now</span>
+              <span className="text-blue-400 text-sm font-semibold">Available</span>
             </div>
           </div>
         </motion.div>

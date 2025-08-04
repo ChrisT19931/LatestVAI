@@ -129,7 +129,7 @@ export default function EmailConfirmedPage() {
               <div className="mt-2 text-sm text-blue-700">
                 <ul className="list-disc list-inside space-y-1">
                   <li>Browse our AI tools and digital products</li>
-                  <li>Access exclusive content and downloads</li>
+                  <li>Access additional resources and downloads</li>
                   <li>Book personalized coaching sessions</li>
                 </ul>
               </div>

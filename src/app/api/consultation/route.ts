@@ -101,7 +101,7 @@ export async function POST(request: Request) {
             <p style="color: #555; margin: 5px 0;"><strong>Timeline:</strong> ${timeline}</p>
           </div>
           
-          <p style="color: #555; line-height: 1.6;">In the meantime, feel free to explore our portfolio and read client testimonials on our website. If you have any urgent questions, don't hesitate to reach out!</p>
+          <p style="color: #555; line-height: 1.6;">In the meantime, feel free to explore our portfolio and read client testimonials on our website. If you have any questions, please reach out.</p>
           
           <div style="text-align: center; margin: 30px 0;">
             <a href="mailto:chris.t@ventarosales.com" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">Contact Us Directly</a>

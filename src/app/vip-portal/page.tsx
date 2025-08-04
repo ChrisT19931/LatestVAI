@@ -85,9 +85,9 @@ export default function VIPPortal() {
         <div className="container mx-auto px-4 max-w-2xl text-center">
           <div className="bg-gray-900 rounded-lg p-8">
             <div className="text-6xl mb-6">🔒</div>
-            <h1 className="text-3xl font-bold text-white mb-4">VIP Access Required</h1>
+            <h1 className="text-3xl font-bold text-white mb-4">Portal Access Required</h1>
             <p className="text-gray-300 mb-8">
-              Welcome to the Ventaro Nation VIP Portal! This exclusive area is reserved for our valued customers.
+              Welcome to the Ventaro Nation Portal! This area provides additional resources for our customers.
             </p>
             <div className="flex gap-4 justify-center">
               <Link 
@@ -178,7 +178,7 @@ export default function VIPPortal() {
                 <div className="text-4xl animate-bounce">🔥</div>
                 <div>
                   <h2 className="text-2xl font-bold text-white">Welcome to Ventaro Nation!</h2>
-                  <p className="text-purple-200">You're now part of an exclusive community of AI entrepreneurs</p>
+                  <p className="text-purple-200">You're now part of our community of AI enthusiasts</p>
                 </div>
               </div>
               <button 
@@ -198,7 +198,7 @@ export default function VIPPortal() {
           <div className="text-6xl mb-4">👑</div>
           <h1 className="text-4xl font-bold text-white mb-4">Ventaro Nation VIP Portal</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Exclusive content, bonuses, and opportunities reserved for our valued community members
+            Additional content and resources available for our community members
           </p>
           {isAdmin && (
             <div className="mt-4 inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
@@ -249,11 +249,11 @@ export default function VIPPortal() {
               </div>
             </div>
 
-            {/* Exclusive Bonuses */}
+            {/* Additional Resources */}
             <div className="bg-gray-900 rounded-lg p-8 mb-8">
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <span className="text-3xl">💎</span>
-                Exclusive VIP Bonuses
+                Community Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {bonusProducts.map((product, index) => (
@@ -278,21 +278,21 @@ export default function VIPPortal() {
             {/* Affiliate Program */}
             <div className="bg-gray-900 rounded-lg p-6">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span className="text-2xl">💸</span>
-                Earn with Ventaro
-              </h3>
-              <div className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <span className="text-2xl">🔄</span>
+                  Collaborate with Ventaro
+                </h3>
+              <div className="bg-gradient-to-r from-blue-900/30 to-indigo-900/30 border border-blue-500/30 rounded-lg p-4 mb-4">
                 <div className="text-center mb-3">
-                  <div className="text-2xl font-bold text-green-400">50% Commission</div>
-                  <p className="text-green-200 text-sm">on every sale you refer</p>
+                  <div className="text-2xl font-bold text-blue-400">Referral Program</div>
+                   <p className="text-blue-200 text-sm">Share resources with your network</p>
                 </div>
               </div>
-              <p className="text-gray-300 text-sm mb-4">
-                Share Ventaro products and earn 50% commission on every sale. Perfect for your audience!
+              <p className="text-gray-300 mb-4">
+                Share Ventaro resources with your network and participate in our community referral program.
               </p>
               <div className="space-y-3">
                 <div>
-                  <label className="text-white text-sm font-semibold block mb-1">Your Affiliate Link:</label>
+                  <label className="text-white text-sm font-semibold block mb-1">Your Referral Link:</label>
                   <div className="flex gap-2">
                     <input 
                       type="text" 
@@ -310,9 +310,9 @@ export default function VIPPortal() {
                 </div>
                 <Link 
                   href="/affiliate-dashboard" 
-                  className="block w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white text-center py-2 rounded font-semibold transition-all duration-300"
+                  className="block w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-center py-2 rounded font-semibold transition-all duration-300"
                 >
-                  View Earnings Dashboard
+                  View Referral Dashboard
                 </Link>
               </div>
             </div>
@@ -333,8 +333,8 @@ export default function VIPPortal() {
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">📱</span>
                     <div>
-                      <div className="font-semibold">Telegram VIP Group</div>
-                      <div className="text-sm opacity-90">Daily tips & exclusive updates</div>
+                      <div className="font-semibold">Telegram Community Group</div>
+                      <div className="text-sm opacity-90">Community discussions & updates</div>
                     </div>
                   </div>
                 </a>

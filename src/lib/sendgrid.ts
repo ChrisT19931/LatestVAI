@@ -319,7 +319,7 @@ export const sendWelcomeEmail = async ({
           <li>Purchase digital products</li>
           <li>Access your downloads anytime</li>
           <li>Track your order history</li>
-          <li>Receive exclusive offers and updates</li>
+          <li>Receive additional resources and updates</li>
         </ul>
         
         <div style="margin: 30px 0; text-align: center;">
@@ -353,7 +353,7 @@ export const sendWelcomeEmail = async ({
     - Purchase digital products
     - Access your downloads anytime
     - Track your order history
-    - Receive exclusive offers and updates
+    - Receive additional resources and updates
     
     Visit your account: ${process.env.NEXT_PUBLIC_SITE_URL || 'https://ventarosales.com'}/my-account
     

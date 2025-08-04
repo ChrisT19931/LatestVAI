@@ -105,7 +105,7 @@ export default function AddToCartButton({ product }: { product: Product }) {
           onClick={handleBuyNow}
           className="btn-secondary flex-1 py-3 px-4 rounded-lg"
         >
-          Buy Now
+          Purchase
         </button>
       </div>
     </div>

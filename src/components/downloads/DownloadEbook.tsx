@@ -27,7 +27,7 @@ const DownloadEbook: React.FC<DownloadEbookProps> = ({ productInfo, handleDownlo
           onClick={handleDownload}
           className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
         >
-          Download E-Book Now
+          Download E-Book
         </button>
       </div>
       

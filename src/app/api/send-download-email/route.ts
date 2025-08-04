@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
           <div style="text-align: center; margin: 40px 0;">
             <a href="${downloadUrl}" 
                style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: bold; font-size: 18px; transition: all 0.3s ease;">
-              📥 Download Your Guide Now
+              📥 Download Your Guide
             </a>
           </div>
           
@@ -105,7 +105,7 @@ export async function POST(request: NextRequest) {
           <div style="text-align: center; margin: 40px 0 20px 0;">
             <a href="${downloadUrl}" 
                style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: bold; font-size: 18px;">
-              📥 Download Now
+              📥 Download
             </a>
           </div>
           
