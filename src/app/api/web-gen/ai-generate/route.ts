@@ -10,7 +10,7 @@ interface AIGenerateRequest {
   pages?: string[]; // Additional pages to generate
   features?: string[]; // Specific features to include
   aiConfig?: {
-    provider: 'openai' | 'anthropic';
+    provider: 'openai' | 'anthropic' | 'internal';
     apiKey: string;
     model: string;
     temperature: number;
@@ -877,12 +877,12 @@ export async function POST(request: NextRequest) {
         // Configure the provider
         if (aiConfig.provider === 'openai') {
           const { OpenAIProvider } = await import('@/lib/ai-service');
-          const openaiProvider = new OpenAIProvider(aiConfig.apiKey, aiConfig.model);
+          const openaiProvider = new OpenAIProvider(aiConfig.apiKey);
           tempAiService.addProvider('openai', openaiProvider);
           tempAiService.setDefaultProvider('openai');
         } else if (aiConfig.provider === 'anthropic') {
           const { AnthropicProvider } = await import('@/lib/ai-service');
-          const anthropicProvider = new AnthropicProvider(aiConfig.apiKey, aiConfig.model);
+          const anthropicProvider = new AnthropicProvider(aiConfig.apiKey);
           tempAiService.addProvider('anthropic', anthropicProvider);
           tempAiService.setDefaultProvider('anthropic');
         }

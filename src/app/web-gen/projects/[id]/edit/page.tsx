@@ -39,7 +39,7 @@ const ProjectEditPage: React.FC = () => {
   const [lastSaved, setLastSaved] = useState<Date | null>(null);
   const [showShareModal, setShowShareModal] = useState(false);
 
-  const projectId = params.id as string;
+  const projectId = params?.id as string;
 
   useEffect(() => {
     if (status === 'loading') return;

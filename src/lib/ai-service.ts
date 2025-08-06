@@ -114,21 +114,36 @@ export class AnthropicProvider implements AIProvider {
 
 // AI Service Manager
 export class AIService {
-  private providers: AIProvider[] = [];
+  private providers = new Map<string, any>();
+  private defaultProvider = 'openai';
+  private registeredProviders: AIProvider[] = [];
   private fallbackEnabled = true;
 
-  constructor() {
+  constructor(initialProvider?: string) {
+    if (initialProvider) {
+      this.defaultProvider = initialProvider;
+    }
     this.initializeProviders();
+  }
+
+  addProvider(name: string, config: any) {
+    this.providers.set(name, config);
+  }
+
+  setDefaultProvider(providerName: string) {
+    if (this.providers.has(providerName)) {
+      this.defaultProvider = providerName;
+    }
   }
 
   private initializeProviders() {
     // Initialize providers based on available API keys
     if (process.env.OPENAI_API_KEY) {
-      this.providers.push(new OpenAIProvider(process.env.OPENAI_API_KEY));
+      this.registeredProviders.push(new OpenAIProvider(process.env.OPENAI_API_KEY));
     }
 
     if (process.env.ANTHROPIC_API_KEY) {
-      this.providers.push(new AnthropicProvider(process.env.ANTHROPIC_API_KEY));
+      this.registeredProviders.push(new AnthropicProvider(process.env.ANTHROPIC_API_KEY));
     }
   }
 
@@ -435,7 +450,7 @@ body {
 
   async generateWebsite(request: WebsiteGenerationRequest): Promise<WebsiteGenerationResponse> {
     // Try AI providers first
-    for (const provider of this.providers) {
+    for (const provider of this.registeredProviders) {
       try {
         console.log(`Attempting generation with ${provider.name}...`);
         const prompt = this.createPrompt(request);
@@ -476,7 +491,7 @@ body {
 
   // Utility methods
   getAvailableProviders(): string[] {
-    return this.providers.map(p => p.name);
+    return this.registeredProviders.map(p => p.name);
   }
 
   setFallbackEnabled(enabled: boolean) {

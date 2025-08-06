@@ -110,119 +110,386 @@ export default function PromptsContent({ hasAccess = false, isAdmin = false }: P
         {/* AI Prompts Collection */}
         <div className="space-y-8">
           
-          {/* Content Creation Prompts */}
+          {/* Business Planning Prompts */}
           <div className="bg-gray-900 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              📝 Content Creation Prompts
+              📊 Business Planning Prompts
             </h2>
             
             <div className="space-y-6">
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">Blog Post Generator</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">AI-Powered Business Plan Generator</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Write a comprehensive 1500-word blog post about [TOPIC]. Include an engaging introduction, 5 main sections with subheadings, actionable tips, and a compelling conclusion with a call-to-action. Target audience: [AUDIENCE]. Tone: [PROFESSIONAL/CASUAL/FRIENDLY]. Include relevant statistics and examples."
+                    "Create a comprehensive business plan for a [BUSINESS TYPE] in the [INDUSTRY] market. Include: executive summary, company description, market analysis with AI-derived insights, competitive landscape, organization structure, product/service offerings, marketing and sales strategy, financial projections for 3 years, and funding requirements. Focus on [UNIQUE VALUE PROPOSITION] as the key differentiator and incorporate AI tools for [SPECIFIC BUSINESS FUNCTIONS]."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Replace [TOPIC] and [AUDIENCE] with your specific needs.</p>
+                <p className="text-gray-400 text-sm">Launch your business with AI-enhanced planning.</p>
               </div>
 
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">Social Media Content</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Market Research & Competitor Analysis</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Create 10 engaging social media posts for [PLATFORM] about [TOPIC]. Each post should be [CHARACTER LIMIT] characters or less, include relevant hashtags, and encourage engagement. Vary the post types: questions, tips, behind-the-scenes, user-generated content prompts, and educational content."
+                    "Conduct a comprehensive market research analysis for [PRODUCT/SERVICE] in the [INDUSTRY]. Include: target demographic profiling with psychographic details, competitor benchmarking of top 5 players (strengths, weaknesses, pricing, positioning), market size and growth projections, emerging trends and technologies, regulatory considerations, and strategic recommendations. Utilize AI tools to gather and analyze data for actionable insights."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Customize for Instagram, LinkedIn, Twitter, or Facebook.</p>
+                <p className="text-gray-400 text-sm">Data-driven market insights powered by AI.</p>
               </div>
 
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">Email Marketing Sequence</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Unique Value Proposition Creator</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Create a 5-email welcome sequence for new subscribers to [BUSINESS TYPE]. Email 1: Welcome and set expectations. Email 2: Share your story/mission. Email 3: Provide valuable free resource. Email 4: Social proof and testimonials. Email 5: Soft pitch for [PRODUCT/SERVICE]. Each email should be 200-300 words with compelling subject lines."
+                    "Develop a compelling unique value proposition for [BUSINESS/PRODUCT] targeting [CUSTOMER SEGMENT]. Analyze: customer pain points, existing market solutions, competitive advantages, emotional benefits, and rational benefits. Create 5 UVP variations with different emphasis (innovation, reliability, experience, results, value) and test messaging for each. Include a primary statement (under 20 words) and supporting points for marketing materials."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Perfect for building relationships with new subscribers.</p>
+                <p className="text-gray-400 text-sm">Differentiate your business with clarity and impact.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Business Model Canvas Generator</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a detailed Business Model Canvas for [BUSINESS CONCEPT] in the [INDUSTRY]. For each section: 1) Key Partners, 2) Key Activities, 3) Key Resources, 4) Value Propositions, 5) Customer Relationships, 6) Channels, 7) Customer Segments, 8) Cost Structure, and 9) Revenue Streams - provide comprehensive analysis with AI-optimized strategies. Include alternative approaches for each section and metrics to evaluate success."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Visualize your entire business model on one page.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">SWOT Analysis Framework</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Conduct a comprehensive SWOT analysis for [BUSINESS/PRODUCT] in the [INDUSTRY] market. For each category: 1) Strengths - internal advantages and unique assets, 2) Weaknesses - internal limitations and improvement areas, 3) Opportunities - external favorable factors and market openings, 4) Threats - external challenges and competitive pressures. Include AI-powered competitive intelligence and prioritized action items for each quadrant."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Strategic analysis for informed decision-making.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Financial Projection Template</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive 3-year financial projection model for a [BUSINESS TYPE] with [REVENUE MODEL]. Include: monthly projections for year 1, quarterly for years 2-3, with detailed income statement, cash flow statement, balance sheet, break-even analysis, key financial ratios, and sensitivity analysis. Incorporate [INDUSTRY BENCHMARKS] and provide AI-powered scenario planning (best case, expected case, worst case) with assumptions clearly documented."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Financial roadmap with AI-enhanced forecasting.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Target Customer Profile Builder</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Develop detailed buyer personas for [BUSINESS/PRODUCT] with AI-enhanced customer insights. Create 3-5 distinct personas including: demographic details, psychographic profiles, goals and motivations, pain points and challenges, buying behavior, decision criteria, objections, preferred communication channels, and day-in-the-life scenarios. Include AI-generated content preferences and digital touchpoint mapping for each persona."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Know your customers at a deeper level.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Business Name & Domain Generator</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Generate 20 creative and strategic business name options for a [BUSINESS TYPE] in the [INDUSTRY] that conveys [KEY BRAND ATTRIBUTES]. For each name: check domain availability (.com, .io, .co), social media handle availability, trademark concerns, international considerations, and memorability factors. Include naming rationale, brand story potential, and AI-powered consumer perception analysis for top 5 options."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Find the perfect name for your business venture.</p>
               </div>
             </div>
           </div>
 
-          {/* Business Automation Prompts */}
+          {/* Development & Deployment Prompts */}
           <div className="bg-gray-900 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              💼 Business Automation Prompts
+              🚀 Development & Deployment Prompts
             </h2>
             
             <div className="space-y-6">
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">Customer Service Responses</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Business Scaling Framework</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Generate professional customer service responses for common inquiries about [PRODUCT/SERVICE]. Include responses for: order status, refund requests, technical support, billing questions, and general complaints. Each response should be empathetic, solution-focused, and maintain brand voice. Tone: [FRIENDLY/PROFESSIONAL]."
+                    "Create a comprehensive business scaling framework for a [BUSINESS TYPE] currently at [CURRENT STAGE] with [REVENUE/TEAM SIZE]. Include: operational scalability assessment, growth bottleneck identification, organizational structure evolution, systems and processes documentation, key performance indicators by department, technology stack recommendations, hiring roadmap with role prioritization, and capital requirements projection. Provide implementation timeline with critical milestones and risk mitigation strategies."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Streamline your customer support workflow.</p>
+                <p className="text-gray-400 text-sm">Systematic approach to sustainable business growth.</p>
               </div>
 
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">Market Research Analysis</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Customer Retention Strategy</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Analyze the market for [PRODUCT/SERVICE] in [LOCATION/DEMOGRAPHIC]. Provide insights on: target audience demographics, competitor analysis, pricing strategies, market size, growth opportunities, and potential challenges. Include actionable recommendations for market entry or expansion."
+                    "Develop a comprehensive customer retention strategy for a [BUSINESS TYPE] with [CUSTOMER BASE SIZE]. Include: customer segmentation by value and behavior, churn prediction model framework, loyalty program structure, personalized communication strategy, proactive engagement touchpoints, win-back campaign approach, customer feedback collection system, and retention metrics dashboard. Provide AI-powered recommendations for identifying at-risk customers and personalization opportunities."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Get comprehensive market insights quickly.</p>
+                <p className="text-gray-400 text-sm">Keep your customers coming back with strategic retention.</p>
               </div>
 
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">Business Plan Generator</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Operational Efficiency Audit</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Create a comprehensive business plan for [BUSINESS IDEA]. Include: executive summary, market analysis, target audience, competitive landscape, marketing strategy, operational plan, financial projections for 3 years, and risk assessment. Format as a professional document suitable for investors or loan applications."
+                    "Create a comprehensive operational efficiency audit framework for a [BUSINESS TYPE]. Include assessment methodologies for: workflow optimization, resource allocation, technology utilization, team productivity, cost structure analysis, vendor management, quality control processes, and customer experience impact. Provide a prioritization matrix for improvement opportunities based on impact/effort, implementation roadmap, and ROI calculation methodology with specific KPIs for measuring success."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Professional business plans in minutes.</p>
+                <p className="text-gray-400 text-sm">Streamline operations and reduce costs while improving quality.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Data-Driven Decision Framework</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design a comprehensive data-driven decision-making framework for [BUSINESS TYPE] focusing on [KEY BUSINESS AREAS]. Include: essential metrics and KPIs by department, data collection and integration methodology, reporting dashboard structure, analysis techniques for different decision types, statistical significance guidelines, A/B testing protocol, predictive modeling approach, and decision documentation process. Provide implementation roadmap with technology recommendations and team training requirements."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Make better business decisions with data-backed insights.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">International Expansion Strategy</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive international expansion strategy for a [BUSINESS TYPE] looking to enter [TARGET REGION/COUNTRY]. Include: market opportunity assessment, competitive landscape analysis, entry mode evaluation (direct export, licensing, joint venture, acquisition), localization requirements, regulatory compliance checklist, supply chain/distribution strategy, pricing model adaptation, marketing approach, team structure, and financial projections. Provide risk assessment and mitigation strategies."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Expand your business globally with a strategic approach.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Strategic Partnership Framework</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Develop a strategic partnership framework for a [BUSINESS TYPE] looking to accelerate growth through collaborations. Include: partnership opportunity identification methodology, partner evaluation criteria, value proposition development, partnership structure options (referral, co-marketing, integration, reseller, etc.), negotiation strategy, contract essentials, implementation roadmap, performance measurement, and relationship management best practices. Provide specific partnership ideas with potential ROI calculations."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Leverage strategic partnerships for accelerated growth.</p>
               </div>
             </div>
           </div>
 
-          {/* Creative & Design Prompts */}
+          {/* How to Use These Prompts */}
+          <div className="bg-gray-900 rounded-lg p-8 mt-8">
+            <h2 className="text-2xl font-bold text-white mb-4">How to Use These Prompts</h2>
+            <div className="space-y-4 text-gray-300">
+              <p>1. <span className="font-semibold text-green-400">Customize for Your Business</span> - Replace all placeholder text in [BRACKETS] with your specific business information.</p>
+              <p>2. <span className="font-semibold text-green-400">Use with Any AI Tool</span> - These prompts work with ChatGPT, Claude, Gemini, or any other AI assistant.</p>
+              <p>3. <span className="font-semibold text-green-400">Iterate for Better Results</span> - If the first response isn't perfect, refine your prompt and try again.</p>
+              <p>4. <span className="font-semibold text-green-400">Save Your Favorites</span> - Create a library of customized prompts that work well for your business.</p>
+              <p>5. <span className="font-semibold text-green-400">Combine Prompts</span> - Mix elements from different prompts to create custom solutions for complex needs.</p>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex justify-between items-center mt-8">
+            <a href="#top" className="text-green-400 hover:text-green-300 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+              </svg>
+              Back to Top
+            </a>
+            <a href="#" onClick={handleDownload} className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+              Download PDF
+            </a>
+          </div>
+          </div>
+
+          {/* E-commerce Setup Prompts */}
           <div className="bg-gray-900 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              🎨 Creative & Design Prompts
+              🛒 E-commerce Setup Prompts
             </h2>
             
             <div className="space-y-6">
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">Brand Story Creation</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">E-commerce Platform Selection Guide</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Craft a compelling brand story for [COMPANY NAME] that operates in [INDUSTRY]. Include: the founder's journey, problem being solved, mission and values, unique approach, customer impact stories, and future vision. Make it emotional, authentic, and memorable. Length: 500-800 words."
+                    "Create a comprehensive comparison of e-commerce platforms for a [BUSINESS TYPE] selling [PRODUCT CATEGORY] with [EXPECTED MONTHLY SALES VOLUME]. Compare Shopify, WooCommerce, BigCommerce, Magento, and Squarespace across: setup costs, monthly fees, transaction fees, ease of use, design flexibility, inventory management, payment gateways, shipping options, marketing tools, SEO capabilities, scalability, and customer support. Include AI integration possibilities for each platform."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Build emotional connections with your audience.</p>
+                <p className="text-gray-400 text-sm">Choose the right foundation for your online store.</p>
               </div>
 
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-purple-400 mb-3">Product Descriptions</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Product Catalog Structure Creator</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Write compelling product descriptions for [PRODUCT NAME]. Include: key features and benefits, target audience, use cases, technical specifications (if applicable), what makes it unique, customer pain points it solves, and a strong call-to-action. Optimize for both SEO and conversions. Length: 150-300 words."
+                    "Design an optimal product catalog structure for an e-commerce store selling [PRODUCT CATEGORY]. Include: category hierarchy (with primary, secondary, and tertiary categories), attribute framework, filtering system, tagging strategy, cross-selling relationships, and URL structure. Optimize for both user experience and SEO. Provide implementation guidelines for [PLATFORM] and AI-powered product recommendation engine setup."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Convert browsers into buyers with persuasive copy.</p>
+                <p className="text-gray-400 text-sm">Organize your products for maximum discoverability.</p>
               </div>
 
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-purple-400 mb-3">Creative Campaign Ideas</h3>
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Product Description Template</h3>
                 <div className="bg-gray-700 rounded p-4 mb-3">
                   <p className="text-gray-300 font-mono text-sm">
-                    "Generate 10 creative marketing campaign ideas for [PRODUCT/SERVICE] targeting [AUDIENCE]. Include campaigns for different channels: social media, email, content marketing, influencer partnerships, and experiential marketing. Each idea should include concept, execution strategy, expected outcomes, and budget considerations."
+                    "Create a comprehensive product description template for [PRODUCT CATEGORY] that converts browsers to buyers. Include: attention-grabbing headline formula, emotional benefit-focused opening, feature-to-benefit translation framework, sensory language examples, social proof integration, technical specifications format, SEO optimization guide with schema markup, and mobile-friendly formatting. Provide AI prompt examples to generate variations at scale."
                   </p>
                 </div>
-                <p className="text-gray-400 text-sm">Fresh marketing ideas to stand out from competitors.</p>
+                <p className="text-gray-400 text-sm">Compelling product descriptions that sell.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Checkout Optimization Strategy</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Develop a comprehensive checkout optimization strategy for an e-commerce store selling [PRODUCT CATEGORY]. Include: ideal checkout steps sequence, form field optimization, guest checkout implementation, mobile-specific considerations, trust indicators placement, abandoned cart recovery tactics, payment method recommendations, order confirmation design, and post-purchase engagement. Provide AI-powered A/B testing recommendations for critical elements."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Reduce cart abandonment and increase conversions.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">E-commerce Email Marketing Sequence</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive e-commerce email marketing sequence for [STORE TYPE]. Include: welcome series (5 emails), abandoned cart series (3 emails), post-purchase series (4 emails), re-engagement series (3 emails), and promotional campaign template. For each email, provide subject line formulas, preview text, content structure, personalization strategies, and optimal send timing. Include AI-powered segmentation recommendations and A/B testing variables."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Automated email sequences that drive revenue.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Digital Marketing Prompts */}
+          <div className="bg-gray-900 rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              📱 Digital Marketing Prompts
+            </h2>
+            
+            <div className="space-y-6">
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Content Marketing Strategy</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive 6-month content marketing strategy for [BUSINESS TYPE] targeting [AUDIENCE]. Include: content pillars aligned with business goals, content calendar with topics for blog posts, videos, podcasts, and social media, keyword strategy with primary and secondary terms, content distribution plan across owned/earned/paid channels, and success metrics. Incorporate AI content optimization recommendations and competitive content gap analysis."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Strategic content that drives business results.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Social Media Campaign Planner</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design a comprehensive social media campaign for [PRODUCT/SERVICE] launch targeting [AUDIENCE]. Include: campaign objectives and KPIs, platform-specific strategy (Instagram, Facebook, LinkedIn, Twitter, TikTok), content themes and formats, posting schedule, hashtag strategy, influencer collaboration approach, paid social recommendations with targeting parameters, and engagement response guidelines. Provide AI-powered content optimization suggestions for each platform."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Multi-platform social campaigns that convert.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">SEO Content Optimization</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create an SEO-optimized content brief for [TARGET KEYWORD] targeting [AUDIENCE]. Include: primary and secondary keywords with search volumes, search intent analysis, recommended content structure with H1-H6 hierarchy, word count recommendation, meta title and description templates, internal and external linking strategy, featured snippet optimization, schema markup recommendations, and AI-powered content gap analysis compared to top-ranking pages."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Rank higher in search results with optimized content.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Email Marketing Automation</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design an advanced email marketing automation system for [BUSINESS TYPE]. Map out trigger-based workflows for: lead nurturing, customer onboarding, cross-selling, re-engagement, and loyalty building. For each workflow, include: trigger events, segmentation criteria, email sequence content, timing intervals, personalization variables, A/B testing elements, and success metrics. Incorporate AI-powered send-time optimization and content personalization strategies."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Automated email journeys that nurture and convert.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">PPC Campaign Structure</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive Google Ads campaign structure for [BUSINESS TYPE] with a monthly budget of [AMOUNT]. Include: campaign types (Search, Display, Shopping, Video), campaign organization by product/service categories, ad group structure with 3-5 keywords per group, negative keyword lists, ad copy templates with USPs and CTAs, ad extension recommendations, bidding strategy, device targeting, and conversion tracking setup. Provide AI-powered budget allocation recommendations across campaigns."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Efficient paid search campaigns that maximize ROI.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">Conversion Rate Optimization Plan</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Develop a comprehensive conversion rate optimization (CRO) plan for [WEBSITE TYPE] focusing on [PRIMARY CONVERSION GOAL]. Include: user journey analysis with friction points, heatmap and session recording implementation, form optimization recommendations, call-to-action testing strategy, social proof placement, mobile-specific optimizations, page speed improvements, and A/B testing roadmap with hypothesis framework. Incorporate AI-powered personalization recommendations for key landing pages."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Turn more visitors into customers with data-driven optimization.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* AI Business Integration Prompts */}
+          <div className="bg-gray-900 rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              🤖 AI Business Integration Prompts
+            </h2>
+            
+            <div className="space-y-6">
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">AI Implementation Roadmap</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive AI implementation roadmap for a [BUSINESS TYPE] looking to enhance [BUSINESS FUNCTION]. Include: current state assessment, AI opportunity identification across operations, prioritization framework based on impact/effort, technology stack recommendations, data requirements and governance, implementation timeline with phases, resource requirements, ROI calculation methodology, and change management strategy. Focus on practical applications with measurable business outcomes."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Strategic AI adoption for business transformation.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">AI-Powered Customer Service</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design an AI-enhanced customer service system for [BUSINESS TYPE] handling [VOLUME] monthly inquiries. Include: chatbot conversation flows for common scenarios, AI-human handoff triggers, knowledge base structure and content requirements, sentiment analysis implementation, personalization framework, multilingual support approach, performance metrics, and continuous improvement process. Provide sample conversation scripts for key customer journeys with both AI and human touchpoints."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">24/7 intelligent customer support that scales.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">AI Content Generation System</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive AI content generation system for [BUSINESS TYPE] producing [CONTENT TYPES]. Include: content strategy alignment, prompt engineering templates for different content formats, brand voice training methodology, human-in-the-loop review workflow, content approval process, publishing integration, performance tracking, and quality assurance protocols. Provide specific prompt examples for high-priority content needs and guidelines for maintaining consistent quality and brand alignment."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Scale your content production with AI assistance.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">AI-Enhanced Product Development</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Develop an AI-enhanced product development framework for [PRODUCT CATEGORY] in the [INDUSTRY]. Include: AI-powered market research methodology, customer feedback analysis system, feature prioritization model, prototype testing approach, predictive performance modeling, competitive differentiation strategy, and continuous improvement cycle. Provide specific AI tool recommendations for each phase and implementation guidelines with expected outcomes and ROI calculations."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Accelerate innovation with AI-driven product development.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">AI Marketing Optimization</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create an AI-powered marketing optimization system for [BUSINESS TYPE] with [MARKETING CHANNELS]. Include: predictive customer segmentation model, dynamic content personalization framework, automated A/B testing protocol, cross-channel attribution modeling, budget allocation algorithm, campaign performance forecasting, and real-time optimization rules. Provide implementation roadmap with specific AI tools, data requirements, integration points, and expected performance improvements with measurement methodology."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Data-driven marketing decisions powered by AI.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-400 mb-3">AI Business Process Automation</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design an AI-powered business process automation strategy for [DEPARTMENT] in a [BUSINESS TYPE]. Analyze current workflows and identify automation opportunities for: data entry/extraction, approval processes, reporting, customer communications, and decision-making. For each process, outline: AI technology selection, implementation approach, integration requirements, exception handling procedures, human oversight mechanisms, and ROI calculation. Include change management and training recommendations."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Streamline operations with intelligent automation.</p>
               </div>
             </div>
           </div>
@@ -404,6 +671,105 @@ export default function PromptsContent({ hasAccess = false, isAdmin = false }: P
             </div>
           </div>
 
+          {/* Development & Deployment Prompts */}
+          <div className="bg-gray-900 rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              🚀 Development & Deployment Prompts
+            </h2>
+            
+            <div className="space-y-6">
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">GitHub Repository Setup Guide</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive GitHub repository setup guide for [PROJECT NAME]. Include: repository initialization, branch protection rules, workflow automation with GitHub Actions, pull request templates, issue templates, README structure, contributing guidelines, and security best practices. Focus on establishing a professional and efficient development workflow."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Set up a professional GitHub repository for your project.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">Vercel Deployment Configuration</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a detailed Vercel deployment configuration for [PROJECT TYPE]. Include: environment variable setup (for Supabase, Stripe, Email, and site configuration), build optimization settings, domain configuration, webhook setup, post-deployment verification steps, and troubleshooting common deployment issues. Focus on achieving a smooth and reliable deployment process."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Deploy your application seamlessly with Vercel.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">Full-Stack Project Environment Setup</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a comprehensive environment setup guide for a [TECH STACK] project. Include: local development environment configuration, required services (database, authentication, payment processing, email), environment variable management, local testing procedures, and production environment preparation. Focus on creating a consistent and reliable development experience across the team."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Set up your development environment correctly from the start.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">CI/CD Pipeline Configuration</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design a CI/CD pipeline for [PROJECT TYPE] using [TOOLS/SERVICES]. Include: automated testing configuration, build process optimization, deployment strategies (blue-green, canary, etc.), rollback procedures, monitoring setup, and notification systems. Focus on creating a reliable and efficient pipeline that ensures code quality and minimizes deployment risks."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Automate your testing and deployment workflow.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">Production Monitoring & Maintenance Plan</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Develop a comprehensive monitoring and maintenance plan for [APPLICATION TYPE] in production. Include: performance monitoring tools, error tracking systems, database monitoring, security scanning, backup strategies, update procedures, and incident response protocols. Focus on ensuring high availability, performance, and security for your application."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Keep your application running smoothly in production.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">Containerization Strategy</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Create a containerization strategy for [APPLICATION TYPE] using Docker. Include: base image selection, multi-stage build optimization, environment configuration, volume management, networking setup, security hardening, and container orchestration recommendations. Focus on creating lightweight, secure, and reproducible containers that streamline development and deployment workflows."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Containerize your application for consistent deployment across environments.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">Kubernetes Deployment Configuration</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design a Kubernetes deployment configuration for [APPLICATION TYPE]. Include: namespace organization, deployment strategies, service definitions, ingress configuration, resource management (requests/limits), horizontal pod autoscaling, persistent storage setup, ConfigMaps and Secrets management, health checks, and pod disruption budgets. Focus on creating a resilient, scalable, and maintainable infrastructure."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Deploy and manage your containerized applications at scale.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">AI Application Security Framework</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Develop a comprehensive security framework for [AI APPLICATION TYPE]. Include: data protection measures, model security (against poisoning, inversion, and theft), prompt injection defenses, authentication and authorization controls, API security, monitoring for abnormal behavior, compliance requirements, and incident response procedures. Focus on addressing AI-specific vulnerabilities while maintaining standard application security best practices."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Secure your AI applications against emerging threats and vulnerabilities.</p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-400 mb-3">Serverless Architecture Design</h3>
+                <div className="bg-gray-700 rounded p-4 mb-3">
+                  <p className="text-gray-300 font-mono text-sm">
+                    "Design a serverless architecture for [APPLICATION TYPE] using [CLOUD PROVIDER]. Include: function organization strategy, event-driven workflow design, API Gateway configuration, authentication integration, database access patterns, local development setup, monitoring approach, and cost optimization techniques. Focus on creating a scalable, maintainable solution that minimizes operational overhead."
+                  </p>
+                </div>
+                <p className="text-gray-400 text-sm">Build scalable applications without managing infrastructure.</p>
+              </div>
+            </div>
+          </div>
+
           {/* Personal Branding & Networking Prompts */}
           <div className="bg-gray-900 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
@@ -469,12 +835,9 @@ export default function PromptsContent({ hasAccess = false, isAdmin = false }: P
                    </p>
                  </div>
                  <p className="text-gray-400 text-sm">Professional media kit for press and partnerships.</p>
-               </div>
-             </div>
-           </div>
-
-
-        </div>
+              </div>
+            </div>
+          </div>
 
         {/* Usage Tips */}
         <div className="bg-gray-900 rounded-lg p-8 mb-8">

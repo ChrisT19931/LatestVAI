@@ -73,8 +73,8 @@ const fallbackProducts = {
   },
   '2': {
     id: '2',
-    name: 'AI Prompts Starter Pack',
-    description: 'Your entry point to AI-powered business success. 30x prompts to feed into ChatGPT to provide you with step by step plan for every aspect + more to start, operate and scale an online business (from setting up to ecomm ideas/requirements marketing / etc).',
+    name: '30x AI Prompts',
+    description: 'Full project structure split into 30x prompts, feed into ChatGPT. Save the project, adjust prompts best suited for your goals & get to work. This is the most cost effective option because it requires the most work from you to put everything together.',
     price: 10.00,
     originalPrice: 25.00,
     image_url: '/images/products/ai-prompts-arsenal.svg',
@@ -84,28 +84,25 @@ const fallbackProducts = {
     product_type: 'digital',
     created_at: new Date().toISOString(),
     benefits: [
-      '30x prompts to feed into ChatGPT for comprehensive business planning',
-      'From setting up to ecommerce ideas, requirements & marketing strategies',
-      'Step-by-step plans for every aspect + more to grow your business',
-      'Works with ChatGPT, Claude, and other AI tools',
-      'Organized by business function for easy navigation',
-      'Perfect starting point for your AI business journey'
+      '30x proven AI prompts for instant business planning',
+      'Prompts structured for start-finish online business build',
+      'Complete ecommerce, marketing & scaling strategies included',
+      'No experience required, follow the steps, ask your project questions, this structure will set the foundation'
     ],
     details: {
-      description: 'Begin your AI business journey with our carefully curated collection of 30x prompts to feed into ChatGPT to provide you with step by step plan for every aspect + more to start, operate and scale an online business (from setting up to ecomm ideas/requirements marketing / etc). Simply feed into ChatGPT and get detailed action plans.',
+      description: 'Full project structure split into 30x prompts, feed into ChatGPT. Save the project, adjust prompts best suited for your goals & get to work. This is the most cost effective option because it requires the most work from you to put everything together.',
       features: [
-        'Complete ecommerce setup and requirements planning',
-        'Marketing strategies and campaign development',
-        'Business operations and scaling methodologies',
-        'Product sourcing and inventory management guidance',
-        'Customer acquisition and retention strategies'
+        '30x proven AI prompts for instant business planning',
+        'Prompts structured for start-finish online business build',
+        'Complete ecommerce, marketing & scaling strategies included',
+        'No experience required, follow the steps, ask your project questions, this structure will set the foundation',
       ],
       includes: [
-        'PDF with all 30 categorized prompts',
-        'Copy-paste ready format',
-        'Usage instructions for each prompt',
-        'Implementation suggestions',
-        'Compatible with all major AI platforms'
+        'Full project structure split into 30x prompts',
+        'Feed directly into ChatGPT for instant results',
+        'Adjustable prompts suited for your specific goals',
+        'Most cost effective option requiring your assembly work',
+        'Complete foundation structure for business building'
       ],
       promptCount: 30,
       format: 'PDF',
@@ -732,77 +729,77 @@ export default function ProductPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-4">Content Creation Prompts (1-8)</h4>
+                      <h4 className="text-lg font-semibold text-white mb-4">Business Planning Prompts (1-8)</h4>
                       <ul className="space-y-2 text-gray-300">
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">1.</span>
-                          <span>Blog Post Generator for Any Niche</span>
+                          <span>AI-Powered Business Plan Generator</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">2.</span>
-                          <span>Social Media Content Calendar Creator</span>
+                          <span>Market Research & Competitor Analysis</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">3.</span>
-                          <span>Email Newsletter Template Builder</span>
+                          <span>Unique Value Proposition Creator</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">4.</span>
-                          <span>YouTube Video Script Writer</span>
+                          <span>Business Model Canvas Generator</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">5.</span>
-                          <span>Instagram Caption & Hashtag Generator</span>
+                          <span>SWOT Analysis Framework</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">6.</span>
-                          <span>LinkedIn Professional Post Creator</span>
+                          <span>Financial Projection Template</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">7.</span>
-                          <span>Podcast Episode Outline Generator</span>
+                          <span>Target Customer Profile Builder</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">8.</span>
-                          <span>Website Copy & Landing Page Writer</span>
+                          <span>Business Name & Domain Generator</span>
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-4">Marketing & SEO Prompts (9-16)</h4>
+                      <h4 className="text-lg font-semibold text-white mb-4">E-commerce Setup Prompts (9-16)</h4>
                       <ul className="space-y-2 text-gray-300">
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">9.</span>
-                          <span>SEO Keyword Research & Strategy</span>
+                          <span>E-commerce Platform Selection Guide</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">10.</span>
-                          <span>Google Ads Campaign Creator</span>
+                          <span>Product Catalog Structure Creator</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">11.</span>
-                          <span>Facebook & Instagram Ad Copy Writer</span>
+                          <span>Product Description Template</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">12.</span>
-                          <span>Email Marketing Sequence Builder</span>
+                          <span>E-commerce Policy Generator</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">13.</span>
-                          <span>Sales Funnel Strategy Designer</span>
+                          <span>Shipping & Fulfillment Strategy</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">14.</span>
-                          <span>Competitor Analysis & Research Tool</span>
+                          <span>Payment Gateway Comparison Tool</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">15.</span>
-                          <span>Brand Voice & Messaging Developer</span>
+                          <span>Customer Service Script Builder</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">16.</span>
-                          <span>Customer Persona & Avatar Creator</span>
+                          <span>E-commerce SEO Strategy Creator</span>
                         </li>
                       </ul>
                     </div>
@@ -810,69 +807,69 @@ export default function ProductPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-4">Business Automation Prompts (17-24)</h4>
+                      <h4 className="text-lg font-semibold text-white mb-4">Marketing & Growth Prompts (17-24)</h4>
                       <ul className="space-y-2 text-gray-300">
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">17.</span>
-                          <span>Customer Service Chatbot Responses</span>
+                          <span>Content Marketing Strategy Blueprint</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">18.</span>
-                          <span>Business Process Documentation</span>
+                          <span>Social Media Marketing Plan</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">19.</span>
-                          <span>Meeting Summary & Action Items</span>
+                          <span>Email Marketing Campaign Sequence</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">20.</span>
-                          <span>Project Management & Task Planning</span>
+                          <span>PPC Advertising Strategy Creator</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">21.</span>
-                          <span>Invoice & Contract Template Generator</span>
+                          <span>Conversion Rate Optimization Plan</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">22.</span>
-                          <span>Employee Training Material Creator</span>
+                          <span>Customer Retention Program Builder</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">23.</span>
-                          <span>Financial Report & Analysis Tool</span>
+                          <span>Affiliate Marketing Strategy Creator</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">24.</span>
-                          <span>Workflow Optimization Analyzer</span>
+                          <span>Marketing Analytics Dashboard Designer</span>
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-4">E-commerce & Personal Branding (25-30)</h4>
+                      <h4 className="text-lg font-semibold text-white mb-4">Development & Deployment Prompts (25-30)</h4>
                       <ul className="space-y-2 text-gray-300">
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">25.</span>
-                          <span>Product Description & Feature Writer</span>
+                          <span>GitHub Repository Setup Guide</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">26.</span>
-                          <span>Amazon Listing Optimization Tool</span>
+                          <span>Vercel Deployment Configuration</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">27.</span>
-                          <span>Personal Brand Story Developer</span>
+                          <span>Full-Stack Project Environment Setup</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">28.</span>
-                          <span>Professional Bio & About Page Writer</span>
+                          <span>CI/CD Pipeline Configuration</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">29.</span>
-                          <span>Networking & Outreach Message Creator</span>
+                          <span>Production Monitoring & Maintenance Plan</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-400 font-bold">30.</span>
-                          <span>Business Pitch & Proposal Generator</span>
+                          <span>Business Scaling Roadmap Creator</span>
                         </li>
                       </ul>
                     </div>

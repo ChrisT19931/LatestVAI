@@ -29,8 +29,8 @@ async function getProducts() {
   return [
     {
       id: '2',
-      name: 'AI Prompts Starter Pack',
-      description: 'Your entry point to AI-powered business success. 30 ready-to-use prompts that jumpstart your online business journey with minimal learning curve and immediate implementation.',
+      name: '30x AI Prompts',
+      description: 'Full project structure split into 30x prompts, feed into ChatGPT. Save the project, adjust prompts best suited for your goals & get to work. This is the most cost effective option because it requires the most work from you to put everything together.',
       price: 10.00,
       originalPrice: 20.00,
       image_url: '/images/products/ai-prompts-arsenal.svg',
@@ -41,8 +41,8 @@ async function getProducts() {
     },
     {
       id: '1',
-      name: 'AI Business E-Book',
-      description: 'The essential knowledge resource containing 90% of what you need to build a successful online business. Comprehensive strategies, frameworks, and implementation guides for the self-starter.',
+      name: 'AI Tools Mastery Guide 2025',
+      description: 'Master 30 AI tools (ChatGPT, Gemini, Replit, Claude, Cursor & Trae AI) to build businesses worth A$10,000+. This guide shows you how to use AI to create websites, apps, content, marketing, and more. Includes step-by-step tutorials and real-world examples.',
       price: 25.00,
       originalPrice: 50.00,
       image_url: '/images/products/ai-tools-mastery-guide.svg',
@@ -53,8 +53,8 @@ async function getProducts() {
     },
     {
       id: '3',
-      name: 'Complete Business Deployment Coaching',
-      description: 'The ultimate solution for those who want all information required to deploy a custom-built site from start to finish. Own your front-end/back-end and edit everything on the fly with expert guidance.',
+      name: 'AI Business Strategy Session 2025',
+      description: '60-minute live expert session to build your complete business deployment strategy. We\'ll analyze your business idea, create a custom AI implementation plan, and show you exactly how to execute it for maximum results.',
       price: 500.00,
       originalPrice: 3000.00,
       image_url: '/images/products/ai-business-strategy-session.svg',
@@ -244,20 +244,10 @@ export default async function ProductsPage() {
                     </h3>
                     <p className="text-gray-200 mb-6 leading-relaxed text-base font-medium">
                       <TypewriterEffect 
-                        text={product.name.includes('30x AI Prompts') 
-                          ? "Full project structure split into 30x prompts, feed into ChatGPT. Save the project, adjust prompts best suited for your goals & get to work. This is the most cost effective option because it requires the most work from you to put everything together." 
-                          : "AI business strategies can help level the playing field in today's competitive market."} 
+                        text={product.description} 
                         className="text-gray-200 leading-relaxed text-base font-medium" 
                         speed={30} 
                         startDelay={1000}
-                      />
-                    </p>
-                    <p className="text-gray-300 mb-6 leading-relaxed text-sm">
-                      <TypewriterEffect 
-                        text={product.description} 
-                        className="text-gray-300 leading-relaxed text-sm" 
-                        speed={25} 
-                        startDelay={2000}
                       />
                     </p>
                     
@@ -266,19 +256,19 @@ export default async function ProductsPage() {
                       <div className="space-y-3 mb-8">
                         <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.1s'}}>
                           <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:animate-pulse group-hover:scale-110 transition-all duration-300`}></div>
-                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">✨ Ready-to-use AI prompts for immediate business results</span>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">30x proven AI prompts for instant business planning.</span>
                         </div>
                         <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.2s'}}>
                           <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full animate-pulse shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:scale-110 transition-all duration-300`}></div>
-                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">🎯 Step-by-step framework from idea to profitable business</span>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">Prompts structured for start-finish online business build</span>
                         </div>
                         <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.3s'}}>
                           <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full animate-pulse shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:scale-110 transition-all duration-300`}></div>
-                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">💼 Full business blueprint: ecommerce, marketing & growth tactics</span>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">Complete ecommerce, marketing & scaling strategies included.</span>
                         </div>
                         <div className="flex items-center space-x-3 transform group-hover:translate-x-2 transition-all duration-300" style={{transitionDelay: '0.4s'}}>
                           <div className={`w-2.5 h-2.5 bg-${config.accent}-400 rounded-full animate-pulse shadow-lg group-hover:shadow-${config.accent}-400/50 group-hover:scale-110 transition-all duration-300`}></div>
-                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">🚀 Beginner-friendly: just follow prompts, ask questions & build</span>
+                          <span className="text-xs text-gray-200 font-medium group-hover:text-white transition-colors duration-300">No experience required, follow the steps, ask your project questions, this structure will set the foundation.</span>
                         </div>
                       </div>
                     )}

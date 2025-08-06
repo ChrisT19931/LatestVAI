@@ -35,6 +35,9 @@ import {
 interface VisualEditorProps {
   components: TemplateComponent[];
   onComponentsChange: (components: TemplateComponent[]) => void;
+  selectedComponent?: string | null;
+  onSelectComponent?: (id: string | null) => void;
+  viewMode?: string;
   theme: {
     colors: {
       primary: string;
@@ -277,11 +280,11 @@ export default function VisualEditor({ components, onComponentsChange, theme }: 
     const duplicatedComponent = {
       ...componentToDuplicate,
       id: generateComponentId(),
-      order: componentToDuplicate.order + 1
+      order: (componentToDuplicate.order ?? 0) + 1
     };
     
     const newComponents = [...components];
-    newComponents.splice(componentToDuplicate.order + 1, 0, duplicatedComponent);
+    newComponents.splice((componentToDuplicate.order ?? 0) + 1, 0, duplicatedComponent);
     
     // Update order
     newComponents.forEach((comp, index) => {
@@ -540,7 +543,7 @@ export default function VisualEditor({ components, onComponentsChange, theme }: 
               ) : (
                 <div className="space-y-2">
                   {components
-                    .sort((a, b) => a.order - b.order)
+                    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
                     .map(component => renderComponentPreview(component))}
                   
                   {/* Drop zone at the end */}

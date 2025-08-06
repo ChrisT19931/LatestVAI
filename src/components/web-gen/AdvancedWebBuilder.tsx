@@ -365,6 +365,72 @@ const AdvancedWebBuilder: React.FC<AdvancedWebBuilderProps> = ({
         </head>
         <body>
           ${pageHtml}
+          <script>
+            // Handle contact form submissions
+            document.addEventListener('DOMContentLoaded', function() {
+              const contactForms = document.querySelectorAll('.contact-form');
+              
+              contactForms.forEach(form => {
+                form.addEventListener('submit', async function(e) {
+                  e.preventDefault();
+                  
+                  const formData = new FormData(form);
+                  const submitButton = form.querySelector('button[type="submit"]');
+                  const originalText = submitButton.textContent;
+                  
+                  // Show loading state
+                  submitButton.textContent = 'Sending...';
+                  submitButton.disabled = true;
+                  
+                  try {
+                    const response = await fetch('/api/contact', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                        name: formData.get('name') || formData.get('Name'),
+                        email: formData.get('email') || formData.get('Email'),
+                        subject: formData.get('subject') || formData.get('Subject') || 'Contact Form Submission',
+                        message: formData.get('message') || formData.get('Message'),
+                        recipient: 'chris.t@ventarosales.com',
+                        product: 'Web Generator Form'
+                      })
+                    });
+                    
+                    if (response.ok) {
+                      // Show success message
+                      const successDiv = document.createElement('div');
+                      successDiv.innerHTML = '<p style="color: green; margin-top: 1rem; padding: 1rem; background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 0.5rem;">Thank you! Your message has been sent successfully.</p>';
+                      form.parentNode.insertBefore(successDiv, form.nextSibling);
+                      form.reset();
+                      
+                      // Remove success message after 5 seconds
+                      setTimeout(() => {
+                        successDiv.remove();
+                      }, 5000);
+                    } else {
+                      throw new Error('Failed to send message');
+                    }
+                  } catch (error) {
+                    // Show error message
+                    const errorDiv = document.createElement('div');
+                    errorDiv.innerHTML = '<p style="color: red; margin-top: 1rem; padding: 1rem; background: #fef2f2; border: 1px solid #ef4444; border-radius: 0.5rem;">Sorry, there was an error sending your message. Please try again.</p>';
+                    form.parentNode.insertBefore(errorDiv, form.nextSibling);
+                    
+                    // Remove error message after 5 seconds
+                    setTimeout(() => {
+                      errorDiv.remove();
+                    }, 5000);
+                  } finally {
+                    // Reset button state
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                  }
+                });
+              });
+            });
+          </script>
         </body>
         </html>
       `;
@@ -744,6 +810,7 @@ const AdvancedWebBuilder: React.FC<AdvancedWebBuilderProps> = ({
                   ...comp,
                   name: comp.type,
                   props: comp.content || {},
+                  styles: comp.styles?.styling || {},
                   order: 0,
                   visible: true
                 }))}
